@@ -13,6 +13,7 @@ int p(int x) {
 	int workload;	// 仕事をする人の個人の仕事量を計算するための変数
 	int i = 0;		
 
+	//各人に仕事量の上限であるxぎりぎりまでAの先頭から順番に仕事を割り振っていく
 	for (k_req = 1; k_req <= k; k_req++) {
 		workload = 0;
 		while (workload + A[i] <= x) {
